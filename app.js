@@ -9,7 +9,4 @@ let playGame = (userInput) => {
   testNumber(input);
 };
 
-process.stdin.on('data', (userInput) => {
-  let input = userInput.toString();
-  playGame(input);
-});
+process.stdin.on('data', playGame);
